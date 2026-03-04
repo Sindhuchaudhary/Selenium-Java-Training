@@ -21,6 +21,25 @@ arr1.unshift(600);
 //shift is remove values at start and pop is to remove the value at end
 arr1.shift();
 arr1.pop();
+console.log("******************************");
+//Filter Function
+let arr10 = [4,2,10,2,5];
+function filterOddNumbers(s)
+{
+    return s%2==0;
+}
+
+let filteredArray = arr10.filter(s=> filterOddNumbers(s));
+console.log(filteredArray);
+//Map
+//It is used to transform the data from one form to another form
+let transformedArray = arr10.map(s => s*2);
+console.log(transformedArray);
+//Reduce
+//It is used to reduce the data to single value
+arr10 = [90,20,40,50];
+let sumOfData = arr10.reduce((a,b) => a+b);
+console.log(sumOfData);
 
 
 
